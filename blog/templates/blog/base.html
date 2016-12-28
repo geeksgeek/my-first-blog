@@ -12,8 +12,18 @@
 </head>
 <body>
     <div class="page-header">
+		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         <h1><a href="/">FranKlog</a></h1>
     </div>
+	
+    <!-- Header -->
+    <div class="date">
+    	Welcome,
+	   	<strong>frank</strong> .
+	  	<a href="/admin/">Admin</a> .
+	   	<a href="/admin/logout/">Log out</a> .     
+    </div>
+    <!-- END Header -->	
 
 	<div class="content container">
 	    <div class="row">
