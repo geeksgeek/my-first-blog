@@ -14,16 +14,16 @@
     <div class="page-header">
 	{% if user.is_authenticated %}
 		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		<a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-leaf"></span></a>
 	{% endif %}
         <h1><a href="/">FranKlog</a></h1>
     </div>
 	
     <!-- Header -->
     <div class="date">
-	  	<a href="/admin/">Admin</a> .
-	{% if user.is_authenticated %}
-	   	<a href="/admin/logout/">Log out</a> .     
-	{% endif %}
+		{% if user.is_authenticated %}
+	  	<h5><a href="/admin/">Admin</a> <a href="/admin/logout/">Log out</a> </h5>     
+		{% endif %}
     </div>
     <!-- END Header -->	
 

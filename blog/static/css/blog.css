@@ -5,13 +5,13 @@ h1 a {
 }
 
 body {
-    padding-left: 15px;
+    padding-left: 0px;
 }
 
 .page-header {
     background-color: #828282;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 80px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -21,17 +21,17 @@ body {
 }
 
 .content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Ubuntu', cursive;
-    color: #828282;
+    margin-left: 60px;
 }
 
 .date {
     float: right;
     color: #828282;
+}
+
+.date h5, .date h5 a, .date h5 a:visited {
+    color: #828282;
+    margin-right: 20px;
 }
 
 .save {
@@ -44,22 +44,26 @@ h1, h2, h3, h4 {
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
-    float: right;
+    float: right; 
     font-size: 26pt;
     margin-right: 20px;
-}
-
-.user-tool {
-    color: #828282;
-    float: right;
-    font-size: 10pt;
-    margin-right: 20px;
+	margin-top: 20px;
 }
 
 .post {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
-    color: #828282;
+.post p {
+	color: #828282
 }
+
+.post h2 a, .post h2 a:visited {
+    color: #696969;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', cursive;
+    color: #696969;
+}
+
