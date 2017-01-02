@@ -14,7 +14,10 @@
     <div class="page-header">
 	{% if user.is_authenticated %}
 		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-		<a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-leaf"></span></a>
+		<a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+		<a href="{% url 'logout' %}" class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>
+	{% else %}
+		<a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
 	{% endif %}
         <h1><a href="/">FranKlog</a></h1>
     </div>
@@ -22,7 +25,7 @@
     <!-- Header -->
     <div class="date">
 		{% if user.is_authenticated %}
-	  	<h5><a href="/admin/">Admin</a> <a href="/admin/logout/">Log out</a> </h5>     
+	  	<h5><a href="/admin/"><span class="glyphicon glyphicon-cog"></span></a></h5>     
 		{% endif %}
     </div>
     <!-- END Header -->	
